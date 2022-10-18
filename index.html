@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>PWA Test App</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+      integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <nav class="navbar bg-light fixed-top">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">Navbar de prueba</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="offcanvas"
+          data-bs-target="#offcanvasNavbar"
+          aria-controls="offcanvasNavbar"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div
+          class="offcanvas offcanvas-end"
+          tabindex="-1"
+          id="offcanvasNavbar"
+          aria-labelledby="offcanvasNavbarLabel"
+        >
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Menú</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="offcanvas"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="offcanvas-body">
+            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#"
+                  >Inicio</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Listas</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Catálogo
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Listas</a></li>
+                  <li><a class="dropdown-item" href="#">Nuevos</a></li>
+                  <li><a class="dropdown-item" href="#">Notificaciones</a></li>
+                  <li>
+                    <hr class="dropdown-divider" />
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">Opciones</a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+            <form class="d-flex mt-3" role="search">
+              <input
+                class="form-control me-2"
+                type="search"
+                placeholder="Search"
+                aria-label="Search"
+              />
+              <button class="btn btn-outline-success" type="submit">
+                Buscar
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <div class="container-fluid mt-5 pt-5">
+      <div class="row">
+        <div class="col">
+          <div class="card">
+            <div class="card-body">
+              <div class="row">
+                <div class="col">
+                  <div class="mb-3">
+                    <label
+                      for="exampleFormControlTextarea1"
+                      class="form-label h5"
+                      >Mi nota</label
+                    >
+                    <textarea
+                      class="form-control"
+                      id="exampleFormControlTextarea1"
+                      rows="3"
+                    ></textarea>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-6">
+                  <button class="btn btn-sm">
+                    <em class="fa-solid fa-camera"></em>
+                  </button>
+                </div>
+                <div class="col-6 text-end">
+                  <button class="btn btn-sm btn-success">Guardar</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <br>
+        <hr class="border-5 ">
+        
+        <h3 class="text">Mis notas</h3>
+        <div class="card my-2">
+          <div class="card-body">
+              <div class="row">
+                <div class="col-3">
+                  <img src="https://i.natgeofe.com/n/548467d8-c5f1-4551-9f58-6817a8d2c45e/NationalGeographic_2572187_3x2.jpg" class="img-fluid img-thumbnail" alt="Imagen relacionada a la nota">
+                </div>
+                <div class="col text-truncate">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem rerum veniam obcaecati quasi ratione, omnis perferendis quisquam laborum qui facere nihil voluptatum, officiis quas earum sit quo magni reprehenderit odio?
+                </div>
+              </div>
+          </div>
+        </div>
+        <div class="card my-2">
+          <div class="card-body">
+              <div class="row">
+                <div class="col-3">
+                  <img src="https://i.natgeofe.com/n/548467d8-c5f1-4551-9f58-6817a8d2c45e/NationalGeographic_2572187_3x2.jpg" class="img-fluid img-thumbnail" alt="Imagen relacionada a la nota">
+                </div>
+                <div class="col text-truncate">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem rerum veniam obcaecati quasi ratione, omnis perferendis quisquam laborum qui facere nihil voluptatum, officiis quas earum sit quo magni reprehenderit odio?
+                </div>
+              </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      if (navigator.serviceWorker) {
+        navigator.serviceWorker.register("sw.js");
+      }
+    </script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
